@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Systems\Graphics.cpp" />
+    <ClCompile Include="Systems\Keyboard.cpp" />
+    <ClCompile Include="Systems\Mouse.cpp" />
+    <ClCompile Include="Systems\Time.cpp" />
+    <ClCompile Include="Systems\Window.cpp" />
+    <ClCompile Include="Utilities\Gui.cpp" />
+    <ClCompile Include="Framework.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Systems\Graphics.h" />
+    <ClInclude Include="Systems\Keyboard.h" />
+    <ClInclude Include="Systems\Mouse.h" />
+    <ClInclude Include="Systems\Time.h" />
+    <ClInclude Include="Systems\Window.h" />
+    <ClInclude Include="Utilities\Gui.h" />
+    <ClInclude Include="Utilities\SingletonBase.h" />
+    <ClInclude Include="Framework.h" />
+    <ClInclude Include="Interfaces\IObject.h" />
+  </ItemGroup>
+</Project>
