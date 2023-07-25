@@ -1,7 +1,7 @@
 #include "Framework.h"
 #include "Graphics.h"
 
-void Graphics::Resize(const UINT & width, const UINT & height) // 초기화라 보면 됨
+void Graphics::Resize(const UINT & width, const UINT & height) // 크기 조정시
 {
 	DeleteSurface();
 	{
@@ -328,6 +328,8 @@ D3DEnumOutputInfo::~D3DEnumOutputInfo()
 	https://learn.microsoft.com/ko-kr/windows/uwp/graphics-concepts/graphics-pipeline
 
 	World - SRT(scale, rotation, translation) View, Projection
+
+	3 ~ 5 : 공간분할 단계(Tessellation Stage)
 
 	3 ~ 8 : 3D 쪽 영역
 
