@@ -8,6 +8,9 @@
     <ClCompile Include="Systems\Window.cpp" />
     <ClCompile Include="Utilities\Gui.cpp" />
     <ClCompile Include="Framework.cpp" />
+    <ClCompile Include="Utilities\DirectHelper.cpp" />
+    <ClCompile Include="Renders\Resources\VertexType.cpp" />
+    <ClCompile Include="Renders\IA\VertexBuffer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -19,5 +22,10 @@
     <ClInclude Include="Utilities\SingletonBase.h" />
     <ClInclude Include="Framework.h" />
     <ClInclude Include="Interfaces\IObject.h" />
+    <ClInclude Include="Utilities\DirectHelper.h" />
+    <ClInclude Include="Renders\Resources\VertexType.h" />
+    <ClInclude Include="Renders\Resources\ShaderBuffer.h" />
+    <ClInclude Include="Renders\Resources\GlobalBuffer.h" />
+    <ClInclude Include="Renders\IA\VertexBuffer.h" />
   </ItemGroup>
 </Project>

@@ -73,3 +73,9 @@ typedef UINT		uint;
 const wstring ShaderPath = L"../_Shaders/";
 
 extern HWND handle;
+
+#include "Utilities/DirectHelper.h"
+
+#include "Renders/Resources/VertexType.h"
+#include "Renders/Resources/ShaderBuffer.h"
+#include "Renders/Resources/GlobalBuffer.h"
