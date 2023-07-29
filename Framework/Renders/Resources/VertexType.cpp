@@ -8,6 +8,8 @@ D3D11_INPUT_ELEMENT_DESC VertexColor::descs[]
 }
 
 /*
+    Vertex : position, color, uv좌표 등등 여러 정보를 담을 수 있다, 시계방향으로 그려짐
+
     D3D11_INPUT_ELEMENT_DESC 요소 설명(Vertex 요소)
 
     SemanticName            : 정점 데이터의 의미를 나타내는 문구

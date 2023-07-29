@@ -5,7 +5,7 @@ class VertexBuffer
 public:
 	~VertexBuffer();
 
-	template<typename T> // 2D, 3D에 모두 사용하기위해
+	template<typename T> // 여러 종류의 VertexType을 모두 처리할 수 있게 템플릿 사용
 	void Create(const vector<T>& vertices, const D3D11_USAGE& usage = D3D11_USAGE_DEFAULT);
 
 	ID3D11Buffer* GetResource() { return buffer; }
