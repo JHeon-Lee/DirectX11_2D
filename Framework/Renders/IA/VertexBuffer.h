@@ -52,4 +52,14 @@ inline void VertexBuffer::Create(const vector<T>& vertices, const D3D11_USAGE& u
 		desc.CPUAccessFlags = D3D11_CPU_ACCESS_READ | D3D11_CPU_ACCESS_WRITE;
 		break;
 	}
+
+	// 7/31
+
+	D3D11_SUBRESOURCE_DATA subData;
+	ZeroMemory(&subData, sizeof(D3D11_SUBRESOURCE_DATA));
+
+	subData.pSysMem = vertices.data();
+
+	HRESULT hr = DEVICE->CreateBuffer(&desc, &subData, &buffer);
+	CHECK(hr);
 }

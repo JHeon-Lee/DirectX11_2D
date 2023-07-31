@@ -79,3 +79,10 @@ extern HWND handle;
 #include "Renders/Resources/VertexType.h"
 #include "Renders/Resources/ShaderBuffer.h"
 #include "Renders/Resources/GlobalBuffer.h"
+
+#include "Renders/IA/VertexBuffer.h"
+#include "Renders/IA/IndexBuffer.h"
+#include "Renders/IA/InputLayout.h"
+
+#include "Renders/Shaders/VertexShader.h"
+#include "Renders/Shaders/PixelShader.h"
