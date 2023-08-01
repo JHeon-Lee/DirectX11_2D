@@ -24,6 +24,7 @@ private:
 	uint count = 0; // vertex의 갯수
 };
 
+// VertexType에 따라 처리하기위해 템플릿으로 만듬
 template<typename T>
 inline void VertexBuffer::Create(const vector<T>& vertices, const D3D11_USAGE& usage)
 {

@@ -1,5 +1,5 @@
 #pragma once
-// IndexBuffer : vertex들 이어서 프리미티브를 만들때 정점에 주어지는 번호를 정렬해놓은것
+// IndexBuffer : vertex들 이어서 프리미티브를 만들때 정해지는 vertex 번호들을 정렬해놓은것
 
 class IndexBuffer
 {

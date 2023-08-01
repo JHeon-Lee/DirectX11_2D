@@ -45,4 +45,5 @@ void IndexBuffer::Create(const vector<uint>& indices, const D3D11_USAGE& usage)
 void IndexBuffer::SetIA()
 {
 	DC->IASetIndexBuffer(buffer, DXGI_FORMAT_R32_UINT, offset);
+	// IndexBuffer 데이터 종류 : 1개, 32bit, 형식 : uint
 }
