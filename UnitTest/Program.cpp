@@ -2,15 +2,42 @@
 #include "Program.h"
 
 #include "Systems/Window.h"
+#include "Demos/01_RectDemo.h"
 
 void Program::Init()
 {
-	
+	{
+		vpb = new VPBuffer();
+
+		D3DXMatrixLookAtLH // LH : ¿Ş¼Õ ÁÂÇ¥°è
+		(
+			&view,
+			&Vector3(0, 0, 0),
+			&Vector3(0, 0, 1),
+			&Vector3(0, 1, 0)
+		);
+
+		D3DXMatrixOrthoOffCenterLH // Á÷±³ Åõ¿µ
+		(
+			&proj,
+			0.0f,
+			(float)WinMaxWidth,
+			0.0f,
+			(float)WinMaxHeight,
+			0,
+			1
+		);
+
+		vpb->SetView(view);
+		vpb->SetProjection(proj);
+	}
+
+	Push(new RectDemo);
 }
 
 void Program::Destroy()
 {
-
+	SAFE_DELETE(vpb);
 
 	for (IObject* obj : objs)
 	{
@@ -27,7 +54,7 @@ void Program::Update()
 
 void Program::Render()
 {
-
+	vpb->SetVSBuffer(1);
 
 	for (IObject* obj : objs)
 		obj->Render();

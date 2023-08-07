@@ -28,20 +28,50 @@ Rect::Rect(Vector3 position, Vector3 size, float rotation)
 	il->Create(VertexColor::descs, VertexColor::count, vs->GetBlob());
 
 	ps = new PixelShader();
-	ps->Create(ShaderPath + L"VertexCoor.hlsl", "PS");
+	ps->Create(ShaderPath + L"VertexColor.hlsl", "PS");
 
 	wb = new WorldBuffer();
 }
-// homework : DX 용어 정리
-
+// homework : DX 용어 정리 ~ 7/31
+//8/7 ~ 
 Rect::~Rect()
 {
+	SAFE_DELETE(wb);
+	SAFE_DELETE(ps);
+	SAFE_DELETE(il);
+	SAFE_DELETE(vs);
+	SAFE_DELETE(ib);
+	SAFE_DELETE(vb); // 생성된 순서의 역순
 }
 
 void Rect::Update()
 {
+	// Size
+	D3DXMatrixScaling(&S, size.x, size.y, size.z);
+	// Rotation
+	D3DXMatrixRotationZ(&R, rotation);
+	// translation (position)
+	D3DXMatrixTranslation(&T, position.x, position.y, position.z);
+	
+	world = S * R * T;
+	wb->SetWorld(world);
 }
 
 void Rect::Render()
 {
+	// IA
+	vb->SetIA();
+	ib->SetIA();
+	il->SetIA();
+	DC->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST); // 어떤 방식으로 프리미티브 만들지
+
+	// VS
+	vs->SetShader();
+	wb->SetVSBuffer(0);
+
+	// PS
+	ps->GetShader();
+
+	// OM
+	DC->DrawIndexed(ib->GetCount(), 0, 0);
 }

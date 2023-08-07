@@ -12,6 +12,7 @@ void PixelShader::Create(const wstring path, const string entryName)
 	this->entryName = entryName;
 
 	CompileShader(path, entryName, "ps_5_0", &blob); // PS 5.0 버전 사용
+	// 여기서 blob : nullptr이라면서 터지는 경우 : Rect.cpp 에서 오타났을 가능성 높음
 
 	HRESULT hr = DEVICE->CreatePixelShader
 	(

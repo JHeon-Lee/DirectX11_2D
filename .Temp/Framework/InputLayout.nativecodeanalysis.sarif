@@ -1,0 +1,1657 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXFLOAT16::value' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 5,
+                  "endLine": 92,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXFLOAT16@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXFLOAT16::value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR2::y' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 5,
+                  "endLine": 124,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR2@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR2::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR2::x' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 5,
+                  "endLine": 124,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR2@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR2::x"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR4::x' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 5,
+                  "endLine": 273,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::x"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR4::z' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 5,
+                  "endLine": 273,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR4::y' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 5,
+                  "endLine": 273,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR4::w' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 273,
+                  "startColumn": 5,
+                  "endLine": 273,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXQUATERNION::y' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 5,
+                  "endLine": 462,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXQUATERNION::w' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 5,
+                  "endLine": 462,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXQUATERNION::z' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 5,
+                  "endLine": 462,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXQUATERNION::x' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 462,
+                  "startColumn": 5,
+                  "endLine": 462,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::x"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXPLANE::d' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 508,
+                  "startColumn": 5,
+                  "endLine": 508,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::d"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXPLANE::b' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 508,
+                  "startColumn": 5,
+                  "endLine": 508,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::b"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXPLANE::c' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 508,
+                  "startColumn": 5,
+                  "endLine": 508,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::c"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXPLANE::a' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 508,
+                  "startColumn": 5,
+                  "endLine": 508,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::a"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXCOLOR::a' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 549,
+                  "startColumn": 5,
+                  "endLine": 549,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::a"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXCOLOR::g' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 549,
+                  "startColumn": 5,
+                  "endLine": 549,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::g"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXCOLOR::b' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 549,
+                  "startColumn": 5,
+                  "endLine": 549,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::b"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXCOLOR::r' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+                },
+                "region": {
+                  "startLine": 549,
+                  "startColumn": 5,
+                  "endLine": 549,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::r"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXFLOAT16::value' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 14,
+                  "endLine": 27,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXFLOAT16@@QAE@M@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXFLOAT16::value"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR2::y' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 14,
+                  "endLine": 94,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR2@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR2::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR4::z' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 532,
+                  "startColumn": 14,
+                  "endLine": 532,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR4::y' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 532,
+                  "startColumn": 14,
+                  "endLine": 532,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXVECTOR4::w' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 532,
+                  "startColumn": 14,
+                  "endLine": 532,
+                  "endColumn": 14
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXVECTOR4@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXVECTOR4::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXQUATERNION::y' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1081,
+                  "startColumn": 17,
+                  "endLine": 1081,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::y"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXQUATERNION::w' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1081,
+                  "startColumn": 17,
+                  "endLine": 1081,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::w"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXQUATERNION::z' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1081,
+                  "startColumn": 17,
+                  "endLine": 1081,
+                  "endColumn": 17
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXQUATERNION@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXQUATERNION::z"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXPLANE::d' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1254,
+                  "startColumn": 12,
+                  "endLine": 1254,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::d"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXPLANE::b' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1254,
+                  "startColumn": 12,
+                  "endLine": 1254,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::b"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXPLANE::c' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1254,
+                  "startColumn": 12,
+                  "endLine": 1254,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXPLANE@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXPLANE::c"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXCOLOR::a' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1389,
+                  "startColumn": 12,
+                  "endLine": 1389,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::a"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXCOLOR::g' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1389,
+                  "startColumn": 12,
+                  "endLine": 1389,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::g"
+          }
+        },
+        {
+          "ruleId": "C26495",
+          "message": {
+            "text": "'D3DXCOLOR::b' 변수가 초기화되지 않았습니다. 항상 멤버 변수를 초기화하세요(type.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+                },
+                "region": {
+                  "startLine": 1389,
+                  "startColumn": 12,
+                  "endLine": 1389,
+                  "endColumn": 12
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0D3DXCOLOR@@QAE@PBUD3DXFLOAT16@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": [],
+          "properties": {
+            "targetSymbol": "D3DXCOLOR::b"
+          }
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "열거형 형식 'ImGuiInputSource'이(가) 범위가 지정되지 않았습니다. 'enum'(Enum.3) 대신 'enum class'를 사용하세요."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/ImGui/imgui_internal.h"
+                },
+                "region": {
+                  "startLine": 1089,
+                  "startColumn": 9,
+                  "endLine": 1089,
+                  "endColumn": 26
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ImGuiContext@@QAE@PAUImFontAtlas@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "열거형 형식 'ImGuiNavLayer'이(가) 범위가 지정되지 않았습니다. 'enum'(Enum.3) 대신 'enum class'를 사용하세요."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/ImGui/imgui_internal.h"
+                },
+                "region": {
+                  "startLine": 1110,
+                  "startColumn": 9,
+                  "endLine": 1110,
+                  "endColumn": 20
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ImGuiContext@@QAE@PAUImFontAtlas@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "열거형 형식 'ImGuiNavForward'이(가) 범위가 지정되지 않았습니다. 'enum'(Enum.3) 대신 'enum class'를 사용하세요."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/ImGui/imgui_internal.h"
+                },
+                "region": {
+                  "startLine": 1123,
+                  "startColumn": 9,
+                  "endLine": 1123,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0ImGuiContext@@QAE@PAUImFontAtlas@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26812",
+          "message": {
+            "text": "열거형 형식 'ImGuiInputReadMode'이(가) 범위가 지정되지 않았습니다. 'enum'(Enum.3) 대신 'enum class'를 사용하세요."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/ImGui/imgui_internal.h"
+                },
+                "region": {
+                  "startLine": 1557,
+                  "startColumn": 29,
+                  "endLine": 1557,
+                  "endColumn": 29
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?IsNavInputPressed@ImGui@@YA_NHW4ImGuiInputReadMode@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6215",
+          "message": {
+            "text": "의미 체계가 다른 정수 형식 간의 캐스트입니다.  부울 형식에서 HRESULT로 캐스트했습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/Framework/Renders/IA/InputLayout.cpp"
+                },
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 3,
+                  "endLine": 13,
+                  "endColumn": 3
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?Create@InputLayout@@QAEXPAUD3D11_INPUT_ELEMENT_DESC@@IPAUID3D10Blob@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'descs'이(가) '0'일 수 있습니다.  이 경우 'ID3D11Device::CreateInputLayout' 함수의 사양과 일치하지 않습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/Framework/Renders/IA/InputLayout.cpp"
+                },
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 10
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?Create@InputLayout@@QAEXPAUD3D11_INPUT_ELEMENT_DESC@@IPAUID3D10Blob@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/Framework/Renders/IA/InputLayout.cpp"
+                          },
+                          "region": {
+                            "startLine": 12,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "'descs'은(는) NULL일 수 있습니다. (이 분기 시작)"
+                        }
+                      },
+                      "kinds": [
+                        "분기"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/Framework/Renders/IA/InputLayout.cpp"
+                          },
+                          "region": {
+                            "startLine": 13,
+                            "startColumn": 3
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/Framework/Renders/IA/InputLayout.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'descs'은(는) 'ID3D11Device::CreateInputLayout'(c:\\program files (x86)\\windows kits\\10\\include\\10.0.16299.0\\um\\d3d11.h:13639에서 선언됨)에 대한 입력입니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/Framework/Renders/IA/InputLayout.cpp"
+                          },
+                          "region": {
+                            "startLine": 15,
+                            "startColumn": 10
+                          }
+                        },
+                        "message": {
+                          "text": "'descs'은(는) NULL(이)면 안 됩니다. 이는 'ID3D11Device::CreateInputLayout'의 SAL 주석과 일치하지 않습니다."
+                        }
+                      },
+                      "kinds": [
+                        "사용법"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29914.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x003CB1C0 -il C:\\Users\\PL_7B_~1\\AppData\\Local\\Temp\\_CL_c5a2dcc1ast -typedil -f Renders\\IA\\InputLayout.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829914 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -I C:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\Framework\\ -I C:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\_Libraries\\ -nologo -W 3 -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_LIB -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive -Zc:wchar_t -Zc:forScope -YcFramework.h -FpC:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\.Temp\\Framework\\Framework.pch -FoC:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\.Temp\\Framework\\InputLayout.obj -FdC:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\.Out\\Framework\\Framework.pdb -Gd -analyze:projectdirectory C:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\Framework -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\Rule Sets\\NativeRecommendedRules.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I C:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\Framework\\Include\\um -I C:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\Framework\\ -I C:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\_Libraries\\DirectX11_SDK\\Include\\ -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29910\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.16299.0\\winrt -I C:\\Users\\PL_7B_004\\source\\repos\\DirectX11_2D_00\\Framework\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "82ce5a00a790b72f94fff0f2e02f191c"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/DirectX11_SDK/Include/D3DX10math.inl"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "59e5ce27aafc8cc8324b7f665978e70d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/_Libraries/ImGui/imgui_internal.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "cf8df31946ea8d8ac72ca424ab1fa69a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/framework.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "41a73947dcb0ff5a483f13aec298b9f6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/framework.h"
+          },
+          "hashes": {
+            "md5": "f83f6571ae92fcb847e9e9faa433e065"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx10.h"
+          },
+          "hashes": {
+            "md5": "3cfe370161ad17552d61dcdc01c47ccd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3d10.h"
+          },
+          "hashes": {
+            "md5": "63e1ca4e354d9cd47c4df3ee4b965bd5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx10core.h"
+          },
+          "hashes": {
+            "md5": "7f4f3aa318325d25467e7a5883c25122"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx10tex.h"
+          },
+          "hashes": {
+            "md5": "3efb7597eedd88d3e10de101d506ebfa"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx10mesh.h"
+          },
+          "hashes": {
+            "md5": "e8a7afff5aa83c08d633593daedbc45b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx10async.h"
+          },
+          "hashes": {
+            "md5": "a86e005be78a9268c9e64a0a89e16ef6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx11async.h"
+          },
+          "hashes": {
+            "md5": "96b77116f07167d726c39706a238d5ac"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx11.h"
+          },
+          "hashes": {
+            "md5": "39b3cc335e951bd472bcfb4503d2f645"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3d11.h"
+          },
+          "hashes": {
+            "md5": "97cc6cca53aac7e9094d7add368c7824"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx11core.h"
+          },
+          "hashes": {
+            "md5": "a7e4e3ce762ccec1d8c209123689686e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/directx11_sdk/include/d3dx11tex.h"
+          },
+          "hashes": {
+            "md5": "fb4eca913a8785e260e7249437b23247"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/imgui/imgui.h"
+          },
+          "hashes": {
+            "md5": "2896b4d4c6cb4eda393d3af5c5f0f401"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/imgui/imconfig.h"
+          },
+          "hashes": {
+            "md5": "ba55ded830a01a8228465bc747fba618"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/imgui/imstb_textedit.h"
+          },
+          "hashes": {
+            "md5": "3bd00207d7a2ed056fd11ce92f6ceeff"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/imgui/imgui_impl_dx11.h"
+          },
+          "hashes": {
+            "md5": "90aaffc6a871b58b21271fed474a2e6a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/_libraries/imgui/imgui_impl_win32.h"
+          },
+          "hashes": {
+            "md5": "b257eaf70edb0b228450aa1055809a59"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/interfaces/iobject.h"
+          },
+          "hashes": {
+            "md5": "d9e53c637478130510e5eafb1eeb0275"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/utilities/singletonbase.h"
+          },
+          "hashes": {
+            "md5": "f8d484e2a9997f7458e2be25b0fa0707"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/systems/graphics.h"
+          },
+          "hashes": {
+            "md5": "dd5e0c3b020619e63d64356eee590119"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/systems/keyboard.h"
+          },
+          "hashes": {
+            "md5": "d1015ebc1b203e61cab610841eb395bc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/systems/mouse.h"
+          },
+          "hashes": {
+            "md5": "339b8b9302ba2e09cc18bd7ba2aab54f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/systems/time.h"
+          },
+          "hashes": {
+            "md5": "56285a026c9e5eb5dfd2ef68f717e70e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/utilities/gui.h"
+          },
+          "hashes": {
+            "md5": "a8d2670a731fed5dd2579bc4d0a93115"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/utilities/directhelper.h"
+          },
+          "hashes": {
+            "md5": "47e71a515131f954add31ff20f9881b9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/resources/vertextype.h"
+          },
+          "hashes": {
+            "md5": "58d5d7ba5e098e48ecacec7170963b13"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/resources/shaderbuffer.h"
+          },
+          "hashes": {
+            "md5": "8aceb96037273e7215ec384051cb8438"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/resources/globalbuffer.h"
+          },
+          "hashes": {
+            "md5": "c97142edaccf2d5b9b0e62a80ba485e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/ia/vertexbuffer.h"
+          },
+          "hashes": {
+            "md5": "64859b8ce2e371461952e1a8c8397141"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/ia/indexbuffer.h"
+          },
+          "hashes": {
+            "md5": "dfb7ae392bb6b6ac69aa2a5f5838af1f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/ia/inputlayout.h"
+          },
+          "hashes": {
+            "md5": "e5deb091ed308d58fcb6d5f926c2c600"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/shaders/vertexshader.h"
+          },
+          "hashes": {
+            "md5": "4de3a38a93c53d43b51b5faaea2ee8c3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/shaders/ishader.h"
+          },
+          "hashes": {
+            "md5": "02c1bbfa0d18fc3a5a06d0cb4ccd84e6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/shaders/pixelshader.h"
+          },
+          "hashes": {
+            "md5": "0c807ce75aaec75c512b200cb7b08352"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/geometries/rect.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "65ff13560ac22e43a982c40bbad1b15a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/geometries/rect.h"
+          },
+          "hashes": {
+            "md5": "c9fec2598fddfa31490543f281b04742"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/pl_7b_004/source/repos/directx11_2d_00/framework/renders/ia/indexbuffer.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "md5": "35febc248c96a9c3744c429eba0dac20"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/PL_7B_004/source/repos/DirectX11_2D_00/Framework/Renders/IA/InputLayout.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "md5": "3917e59c20deaeb0e2157990ec4155d7"
+          }
+        }
+      ]
+    }
+  ]
+}
