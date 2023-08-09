@@ -75,3 +75,31 @@ void Rect::Render()
 	// OM
 	DC->DrawIndexed(ib->GetCount(), 0, 0);
 }
+
+void Rect::GUI()
+{
+	using namespace ImGui;
+	Begin("Rect"); // 회색 상자 구현
+	{
+		InputFloat3("Pos", position, 2);
+		InputFloat3("Size", size, 2);
+		SliderAngle("Rot", &rotation, 0, 360.0f);
+
+		if (ColorPicker4("Color", color))
+			UpdateColor();
+	}
+	End();
+}
+
+void Rect::UpdateColor()
+{
+	D3D11_MAPPED_SUBRESOURCE subResource;
+	DC->Map(vb->GetResource(), 0, D3D11_MAP_WRITE_DISCARD, 0, &subResource);
+	{
+		for (auto& v : vertices)
+			v.color = color;
+
+		memcpy(subResource.pData, vertices.data(), vb->GetCount() * vb->GetStride());
+	}
+	DC->Unmap(vb->GetResource(), 0);
+}

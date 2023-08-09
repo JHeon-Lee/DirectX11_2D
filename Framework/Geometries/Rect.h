@@ -9,6 +9,10 @@ public:
 	void Update();
 	void Render();
 
+	void GUI(); // 8/9~
+
+	void UpdateColor();
+
 private:
 	vector<VertexColor> vertices;
 	VertexBuffer* vb;

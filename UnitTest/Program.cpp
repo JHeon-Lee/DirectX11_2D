@@ -2,7 +2,9 @@
 #include "Program.h"
 
 #include "Systems/Window.h"
+
 #include "Demos/01_RectDemo.h"
+#include "Demos/02_TextureDemo.h"
 
 void Program::Init()
 {
@@ -32,7 +34,8 @@ void Program::Init()
 		vpb->SetProjection(proj);
 	}
 
-	Push(new RectDemo);
+	//Push(new RectDemo);
+	Push(new TextureDemo);
 }
 
 void Program::Destroy()

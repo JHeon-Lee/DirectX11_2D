@@ -17,6 +17,7 @@
     <ClCompile Include="Renders\Shaders\PixelShader.cpp" />
     <ClCompile Include="Renders\Shaders\IShader.cpp" />
     <ClCompile Include="Geometries\Rect.cpp" />
+    <ClCompile Include="Geometries\TextureRect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -39,5 +40,6 @@
     <ClInclude Include="Renders\Shaders\PixelShader.h" />
     <ClInclude Include="Renders\Shaders\IShader.h" />
     <ClInclude Include="Geometries\Rect.h" />
+    <ClInclude Include="Geometries\TextureRect.h" />
   </ItemGroup>
 </Project>

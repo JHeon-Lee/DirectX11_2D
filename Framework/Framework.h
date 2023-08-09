@@ -71,6 +71,7 @@ typedef UINT		uint;
 #define WinMaxHeight 720
 
 const wstring ShaderPath = L"../_Shaders/";
+const wstring TexturePath = L"../_Resources/Textures/";
 
 extern HWND handle;
 

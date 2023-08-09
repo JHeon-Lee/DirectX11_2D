@@ -29,4 +29,5 @@ void RectDemo::PostRender()
 
 void RectDemo::GUI()
 {
+	rect->GUI();
 }
