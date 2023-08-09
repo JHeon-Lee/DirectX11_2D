@@ -11,7 +11,7 @@ Rect::Rect(Vector3 position, Vector3 size, float rotation)
 	vertices[2].position = Vector3(+0.5f, -0.5f, 0.0f);
 	vertices[3].position = Vector3(-0.5f, +0.5f, 0.0f);
 
-	for (auto v : vertices)
+	for (auto& v : vertices)
 		v.color = color;
 
 	vb = new VertexBuffer();
@@ -70,7 +70,7 @@ void Rect::Render()
 	wb->SetVSBuffer(0);
 
 	// PS
-	ps->GetShader();
+	ps->SetShader();
 
 	// OM
 	DC->DrawIndexed(ib->GetCount(), 0, 0);
