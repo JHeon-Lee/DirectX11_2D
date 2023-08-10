@@ -75,7 +75,7 @@
     <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(SolutionDir)_Libraries\DirectX11_SDK\Lib\x86\;$(LibraryPath)</LibraryPath>
     <IntDir>$(SolutionDir).Temp\Framework\</IntDir>
     <OutDir>$(SolutionDir).Out\Framework\</OutDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(SolutionDir)_Libraries\DirectX11_SDK\Include\;$(IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)_Libraries\DirectX11_SDK\Include\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
