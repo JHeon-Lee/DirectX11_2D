@@ -1,4 +1,4 @@
-struct VertexInput // vertex가 입력받을 구조체
+struct VertexInput // vertex가 입력받을 구조체(vertextype에서 vertexcolor 넘겨줄 때 position, color 두개 넘겨주는중)
 {
 	float4 position : POSITION0; // 정점 위치
 	float4 color : COLOR0; // 정점 색상
@@ -6,7 +6,7 @@ struct VertexInput // vertex가 입력받을 구조체
 
 struct PixelInput // pixel에 대해 입력받는 구조체
 {
-	float4 position : SV_POSITION0;
+	float4 position : SV_POSITION0; // 위의 position과 다른점은 위는 world좌표같은것, 밑은 pixel 좌표라 보면됨
 	float4 color : COLOR0;
 };
 
@@ -68,4 +68,7 @@ float4 PS(PixelInput input) : SV_Target
 		- 셰이더에서 사용하는 전역 변수를 저장하는데 사용
 		- 각 상수 버퍼 레지스터에는 한 개의 상수 버퍼만 할당할 수 있음
 		- 상수 버퍼 내부에는 여러 개의 변수를 선언할 수 있다
+
+	버퍼 : 16byte 단위로 만들게됨
+	더미 : 버퍼의 16byte를 채우기 위해 부족한 부분을 채우는 용도
 */
