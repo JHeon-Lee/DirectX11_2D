@@ -25,7 +25,7 @@ private:
 	void SetVertices();
 	void UpdateWorld();
 
-protected:
+protected: // 나중에 animationrect 만들때 상속시키기 위해 protected를 사용
 	vector<VertexTexture> vertices;
 	VertexBuffer* vb = nullptr;
 

@@ -76,14 +76,15 @@ void Rect::Render()
 	DC->DrawIndexed(ib->GetCount(), 0, 0);
 }
 
-void Rect::GUI()
+void Rect::GUI() // 포트폴리오 만들 때 실시간으로 값의 변경을 확인할 때에도 사용 가능
 {
 	using namespace ImGui;
 	Begin("Rect"); // 회색 상자 구현
 	{
-		InputFloat3("Pos", position, 2);
+		// 정의할 내용들
+		InputFloat3("Pos", position, 2); // 정해줄 이름, 변경할 값, 나타낼 소수점 자릿수
 		InputFloat3("Size", size, 2);
-		SliderAngle("Rot", &rotation, 0, 360.0f);
+		SliderAngle("Rot", &rotation, 0, 360.0f); // 정해줄 이름, 변경할 값, 최소값, 최대값
 
 		if (ColorPicker4("Color", color))
 			UpdateColor();
@@ -93,6 +94,8 @@ void Rect::GUI()
 
 void Rect::UpdateColor()
 {
+	// vertex의 정보 변경해야함 --> 버퍼 안의 내용은 맘대로 수정이 안됨
+	// --> Mapping이라는 작업을 수행해야함 --> subresource를 만들어줌 --> mapping --> unmapping
 	D3D11_MAPPED_SUBRESOURCE subResource;
 	DC->Map(vb->GetResource(), 0, D3D11_MAP_WRITE_DISCARD, 0, &subResource);
 	{

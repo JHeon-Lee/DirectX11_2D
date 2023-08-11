@@ -28,4 +28,7 @@ D3D11_INPUT_ELEMENT_DESC VertexTexture::descs[]
 
     D3D11_APPEND_ALIGNED_ELEMENT -> 오프셋 자동 계산
     R32G32B32_FLOAT -> 32바이트, float 형식
+
+    출력 객체를 만드는 과정
+    VertexType에 구조체 생성 -> Geometries에 cpp,h 파일 생성 후 작성 --> UnitTest의 데모 폴더에 데모 생성
 */
