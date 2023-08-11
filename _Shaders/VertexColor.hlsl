@@ -71,4 +71,7 @@ float4 PS(PixelInput input) : SV_Target
 
 	버퍼 : 16byte 단위로 만들게됨
 	더미 : 버퍼의 16byte를 채우기 위해 부족한 부분을 채우는 용도
+
+	HLSL : high level shader language --> GPU를 위한 언어
+		: DirectX 에서 GPU연산되는 쉐이더를 작성하는데 사용하는 언어
 */
