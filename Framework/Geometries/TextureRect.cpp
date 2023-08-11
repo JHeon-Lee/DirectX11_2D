@@ -38,7 +38,6 @@ TextureRect::TextureRect(Vector3 position, Vector3 size, float rotation, wstring
 
 TextureRect::~TextureRect()
 {
-	SAFE_DELETE(srv);
 	SAFE_DELETE(wb);
 	SAFE_DELETE(il);
 	SAFE_DELETE(ps);
@@ -85,6 +84,14 @@ void TextureRect::Render()
 
 void TextureRect::GUI()
 {
+}
+
+void TextureRect::SetShader(wstring shaderPath)
+{
+	vs->Clear();
+	ps->Clear();
+	vs->Create(ShaderPath + shaderPath, "VS");
+	ps->Create(ShaderPath + shaderPath, "PS");
 }
 
 void TextureRect::SetVertices()

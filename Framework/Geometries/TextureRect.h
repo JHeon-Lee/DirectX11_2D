@@ -21,6 +21,8 @@ public:
 	void Render();
 	void GUI();
 
+	void SetShader(wstring shaderPath);
+
 private:
 	void SetVertices();
 	void UpdateWorld();

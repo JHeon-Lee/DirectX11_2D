@@ -18,6 +18,8 @@
     <ClCompile Include="Renders\Shaders\IShader.cpp" />
     <ClCompile Include="Geometries\Rect.cpp" />
     <ClCompile Include="Geometries\TextureRect.cpp" />
+    <ClCompile Include="Geometries\ShadedTexture.cpp" />
+    <ClCompile Include="Geometries\BlurTexture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -41,5 +43,7 @@
     <ClInclude Include="Renders\Shaders\IShader.h" />
     <ClInclude Include="Geometries\Rect.h" />
     <ClInclude Include="Geometries\TextureRect.h" />
+    <ClInclude Include="Geometries\ShadedTexture.h" />
+    <ClInclude Include="Geometries\BlurTexture.h" />
   </ItemGroup>
 </Project>
