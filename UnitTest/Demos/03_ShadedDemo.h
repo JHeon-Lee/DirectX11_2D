@@ -11,6 +11,6 @@ public:
 	virtual void GUI() override;
 
 private:
-	// class ShadedTexture* st;
-	class BlurTexture* bt;
+	// class ShadedTexture* st; : TextureFilter 실습
+	class BlurTexture* bt; // : TextureBlur 실습
 };
