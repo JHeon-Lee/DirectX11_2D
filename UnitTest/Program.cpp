@@ -6,6 +6,7 @@
 #include "Demos/01_RectDemo.h"
 #include "Demos/02_TextureDemo.h"
 #include "Demos/03_ShadedDemo.h"
+#include "Demos/QuarteredDemo.h"
 
 void Program::Init()
 {
@@ -36,8 +37,9 @@ void Program::Init()
 	}
 
 	//Push(new RectDemo);
-	//Push(new TextureDemo);
-	Push(new ShadedDemo);
+	Push(new TextureDemo);
+	//Push(new ShadedDemo);
+	//Push(new QuarteredDemo);
 }
 
 void Program::Destroy()

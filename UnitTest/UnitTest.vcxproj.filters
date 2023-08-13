@@ -6,11 +6,13 @@
     <ClInclude Include="Demos\01_RectDemo.h" />
     <ClInclude Include="Demos\02_TextureDemo.h" />
     <ClInclude Include="Demos\03_ShadedDemo.h" />
+    <ClInclude Include="Demos\QuarteredDemo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Demos\01_RectDemo.cpp" />
     <ClCompile Include="Demos\02_TextureDemo.cpp" />
     <ClCompile Include="Demos\03_ShadedDemo.cpp" />
+    <ClCompile Include="Demos\QuarteredDemo.cpp" />
   </ItemGroup>
 </Project>

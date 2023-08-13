@@ -12,6 +12,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Framework", "Framework\Fram
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Shaders", "_Shaders", "{2F38852D-F610-4FE5-850D-2F23554EC4B2}"
 	ProjectSection(SolutionItems) = preProject
+		_Shaders\QuarteredFilter.hlsl = _Shaders\QuarteredFilter.hlsl
 		_Shaders\TextureBlur.hlsl = _Shaders\TextureBlur.hlsl
 		_Shaders\TextureFilter.hlsl = _Shaders\TextureFilter.hlsl
 		_Shaders\VertexColor.hlsl = _Shaders\VertexColor.hlsl
