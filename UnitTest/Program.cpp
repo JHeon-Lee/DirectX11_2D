@@ -37,9 +37,9 @@ void Program::Init()
 	}
 
 	//Push(new RectDemo);
-	Push(new TextureDemo);
+	//Push(new TextureDemo);
 	//Push(new ShadedDemo);
-	//Push(new QuarteredDemo);
+	Push(new QuarteredDemo);
 }
 
 void Program::Destroy()
