@@ -125,15 +125,29 @@ void TextureRect::SetVertices()
 		vertices[3].position = Vector3(-0.5f, +1.0f, 0.0f);
 		break;
 	case center:
-		vertices[0].position = Vector3(-0.5f, -0.5f, 0.0f);
-		vertices[1].position = Vector3(+0.5f, +0.5f, 0.0f);
-		vertices[2].position = Vector3(+0.5f, -0.5f, 0.0f);
-		vertices[3].position = Vector3(-0.5f, +0.5f, 0.0f);
+		// 기본 사각형
+		// vertices[0].position = Vector3(-0.5f, -0.5f, 0.0f);
+		// vertices[1].position = Vector3(+0.5f, +0.5f, 0.0f);
+		// vertices[2].position = Vector3(+0.5f, -0.5f, 0.0f);
+		// vertices[3].position = Vector3(-0.5f, +0.5f, 0.0f);
+		
+		// 마름모
+		vertices[0].position = Vector3(0.0f, -0.5f, 0.0f); // 중앙 하단
+		vertices[1].position = Vector3(0.0f, +0.5f, 0.0f); // 중앙 상단
+		vertices[2].position = Vector3(+0.5f, 0.0f, 0.0f); // 우측
+		vertices[3].position = Vector3(-0.5f, 0.0f, 0.0f); // 좌측
 		break;
 	}
 
-	vertices[0].uv = Vector2(0.0f, +1.0f);
-	vertices[1].uv = Vector2(+1.0f, 0.0f);
-	vertices[2].uv = Vector2(+1.0f, +1.0f);
-	vertices[3].uv = Vector2(0.0f, 0.0f);
+	// 기본 사각형
+	// vertices[0].uv = Vector2(0.0f, +1.0f);
+	// vertices[1].uv = Vector2(+1.0f, 0.0f);
+	// vertices[2].uv = Vector2(+1.0f, +1.0f);
+	// vertices[3].uv = Vector2(0.0f, 0.0f);
+
+	// 마름모
+	vertices[0].uv = Vector2(+0.5f, +1.0f);
+	vertices[1].uv = Vector2(+0.5f, 0.0f);
+	vertices[2].uv = Vector2(+1.0f, +0.5f);
+	vertices[3].uv = Vector2(0.0f, +0.5f);
 }
