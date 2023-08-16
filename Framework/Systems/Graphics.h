@@ -20,6 +20,7 @@ public:
 	
 	void Resize(const UINT& width, const UINT& height);
 	void SetViewport(const UINT& width, const UINT& height);
+	void InitViewport();
 
 	void Begin();
 	void End();

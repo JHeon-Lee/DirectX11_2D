@@ -30,6 +30,11 @@ void Graphics::SetViewport(const UINT & width, const UINT & height) // Viewport 
 	viewport.MaxDepth = 1.0f;
 }
 
+void Graphics::InitViewport()
+{
+	deviceContext->RSSetViewports(1, &viewport);
+}
+
 void Graphics::Begin() // TODO : 렌더링 파이프라인 알아봐야함, 단계 외우기 -->> 면접에 나올 수 있음
 {
 	deviceContext->OMSetRenderTargets(1, &rtv, nullptr);

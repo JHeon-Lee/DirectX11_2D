@@ -22,6 +22,7 @@
     <ClCompile Include="Geometries\BlurTexture.cpp" />
     <ClCompile Include="Geometries\QuarteredTexture.cpp" />
     <ClCompile Include="Utilities\RenderTexture.cpp" />
+    <ClCompile Include="Utilities\BoundingBox.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -49,5 +50,6 @@
     <ClInclude Include="Geometries\BlurTexture.h" />
     <ClInclude Include="Geometries\QuarteredTexture.h" />
     <ClInclude Include="Utilities\RenderTexture.h" />
+    <ClInclude Include="Utilities\BoundingBox.h" />
   </ItemGroup>
 </Project>

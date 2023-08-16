@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Shaders", "_Shaders", "{2F
 		_Shaders\QuarteredFilter.hlsl = _Shaders\QuarteredFilter.hlsl
 		_Shaders\TextureBlur.hlsl = _Shaders\TextureBlur.hlsl
 		_Shaders\TextureFilter.hlsl = _Shaders\TextureFilter.hlsl
+		_Shaders\TextureFilter_Task.hlsl = _Shaders\TextureFilter_Task.hlsl
 		_Shaders\VertexColor.hlsl = _Shaders\VertexColor.hlsl
 		_Shaders\VertexTexture.hlsl = _Shaders\VertexTexture.hlsl
 	EndProjectSection

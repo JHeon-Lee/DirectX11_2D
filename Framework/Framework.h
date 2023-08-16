@@ -87,3 +87,14 @@ extern HWND handle;
 
 #include "Renders/Shaders/VertexShader.h"
 #include "Renders/Shaders/PixelShader.h"
+
+#include "Utilities/BoundingBox.h"
+
+enum Pivot
+{
+	CENTER = 0,
+	LEFT,
+	RIGHT,
+	UPPER,
+	LOWER
+};

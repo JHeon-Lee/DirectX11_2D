@@ -31,6 +31,8 @@ Rect::Rect(Vector3 position, Vector3 size, float rotation)
 	ps->Create(ShaderPath + L"VertexColor.hlsl", "PS");
 
 	wb = new WorldBuffer();
+
+	box = new BoundingBox(position, size, rotation, Color(1, 0, 0, 1), CENTER);
 }
 // homework : DX 용어 정리 ~ 7/31
 //8/7 ~ 

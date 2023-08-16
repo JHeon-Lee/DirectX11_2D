@@ -33,4 +33,6 @@ private:
 	float rotation;
 
 	Color color = Color(1, 0, 0, 1);
+
+	BoundingBox* box = nullptr;
 };

@@ -3,17 +3,8 @@
 class TextureRect
 {
 public:
-	enum Pivot
-	{
-		left,
-		right,
-		upper,
-		lower,
-		center
-	};
-
-public:
-	TextureRect(Vector3 position, Vector3 size, float rotation, wstring path, Pivot pivot = center);
+	TextureRect(Vector3 position, Vector3 size, float rotation, wstring path, Pivot pivot = CENTER);
+	TextureRect(Vector3 position, Vector3 size, float rotation);
 	virtual ~TextureRect();
 
 	void Update();
@@ -22,6 +13,7 @@ public:
 	void GUI();
 
 	void SetShader(wstring shaderPath);
+	void SetSRV(ID3D11ShaderResourceView* srv) { this->srv = srv; }
 
 private:
 	void SetVertices();
@@ -47,7 +39,7 @@ protected: // 나중에 animationrect 만들때 상속시키기 위해 protected를 사용
 	Vector3 size;
 	float rotation;
 
-	Pivot pivot;
+	Pivot pivot = CENTER;
 
 	ID3D11ShaderResourceView* srv = nullptr;
 };

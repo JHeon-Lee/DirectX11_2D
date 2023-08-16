@@ -7,6 +7,7 @@
     <ClInclude Include="Demos\02_TextureDemo.h" />
     <ClInclude Include="Demos\03_ShadedDemo.h" />
     <ClInclude Include="Demos\QuarteredDemo.h" />
+    <ClInclude Include="Demos\04_RTVDemo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.cpp" />
@@ -14,5 +15,6 @@
     <ClCompile Include="Demos\02_TextureDemo.cpp" />
     <ClCompile Include="Demos\03_ShadedDemo.cpp" />
     <ClCompile Include="Demos\QuarteredDemo.cpp" />
+    <ClCompile Include="Demos\04_RTVDemo.cpp" />
   </ItemGroup>
 </Project>

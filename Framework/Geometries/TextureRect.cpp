@@ -36,6 +36,30 @@ TextureRect::TextureRect(Vector3 position, Vector3 size, float rotation, wstring
 	CHECK(hr); // 여기서 터지면 path 문제 --> 파일명 확인 등등
 }
 
+TextureRect::TextureRect(Vector3 position, Vector3 size, float rotation)
+
+{
+	SetVertices();
+
+	vb = new VertexBuffer();
+	vb->Create(vertices, D3D11_USAGE_DYNAMIC);
+
+	indices = { 0,1,2,0,3,1 };
+	ib = new IndexBuffer;
+	ib->Create(indices, D3D11_USAGE_IMMUTABLE);
+
+	vs = new VertexShader;
+	vs->Create(ShaderPath + L"VertexTexture.hlsl", "VS");
+
+	ps = new PixelShader;
+	ps->Create(ShaderPath + L"VertexTexture.hlsl", "PS");
+
+	il = new InputLayout;
+	il->Create(VertexTexture::descs, VertexTexture::count, vs->GetBlob());
+
+	wb = new WorldBuffer;
+}
+
 TextureRect::~TextureRect()
 {
 	SAFE_DELETE(wb);
@@ -100,54 +124,54 @@ void TextureRect::SetVertices()
 
 	switch (pivot)
 	{
-	case left:
+	case LEFT:
 		vertices[0].position = Vector3(0.0f, -0.5f, 0.0f);
 		vertices[1].position = Vector3(+1.0f, +0.5f, 0.0f);
 		vertices[2].position = Vector3(+1.0f, -0.5f, 0.0f);
 		vertices[3].position = Vector3(0.0f, +0.5f, 0.0f);
 		break;
-	case right:
+	case RIGHT:
 		vertices[0].position = Vector3(-1.0f, -0.5f, 0.0f);
 		vertices[1].position = Vector3(0.0f, +0.5f, 0.0f);
 		vertices[2].position = Vector3(0.0f, -0.5f, 0.0f);
 		vertices[3].position = Vector3(-1.0f, +0.5f, 0.0f);
 		break;
-	case upper:
+	case UPPER:
 		vertices[0].position = Vector3(-0.5f, -1.0f, 0.0f);
 		vertices[1].position = Vector3(+0.5f, 0.0f, 0.0f);
 		vertices[2].position = Vector3(+0.5f, -1.0f, 0.0f);
 		vertices[3].position = Vector3(-0.5f, 0.0f, 0.0f);
 		break;
-	case lower:
+	case LOWER:
 		vertices[0].position = Vector3(-0.5f, 0.0f, 0.0f);
 		vertices[1].position = Vector3(+0.5f, +1.0f, 0.0f);
 		vertices[2].position = Vector3(+0.5f, 0.0f, 0.0f);
 		vertices[3].position = Vector3(-0.5f, +1.0f, 0.0f);
 		break;
-	case center:
+	case CENTER:
 		// 기본 사각형
-		// vertices[0].position = Vector3(-0.5f, -0.5f, 0.0f);
-		// vertices[1].position = Vector3(+0.5f, +0.5f, 0.0f);
-		// vertices[2].position = Vector3(+0.5f, -0.5f, 0.0f);
-		// vertices[3].position = Vector3(-0.5f, +0.5f, 0.0f);
+		vertices[0].position = Vector3(-0.5f, -0.5f, 0.0f);
+		vertices[1].position = Vector3(+0.5f, +0.5f, 0.0f);
+		vertices[2].position = Vector3(+0.5f, -0.5f, 0.0f);
+		vertices[3].position = Vector3(-0.5f, +0.5f, 0.0f);
 		
 		// 마름모
-		vertices[0].position = Vector3(0.0f, -0.5f, 0.0f); // 중앙 하단
-		vertices[1].position = Vector3(0.0f, +0.5f, 0.0f); // 중앙 상단
-		vertices[2].position = Vector3(+0.5f, 0.0f, 0.0f); // 우측
-		vertices[3].position = Vector3(-0.5f, 0.0f, 0.0f); // 좌측
+		// vertices[0].position = Vector3(0.0f, -0.5f, 0.0f); // 중앙 하단
+		// vertices[1].position = Vector3(0.0f, +0.5f, 0.0f); // 중앙 상단
+		// vertices[2].position = Vector3(+0.5f, 0.0f, 0.0f); // 우측
+		// vertices[3].position = Vector3(-0.5f, 0.0f, 0.0f); // 좌측
 		break;
 	}
 
 	// 기본 사각형
-	// vertices[0].uv = Vector2(0.0f, +1.0f);
-	// vertices[1].uv = Vector2(+1.0f, 0.0f);
-	// vertices[2].uv = Vector2(+1.0f, +1.0f);
-	// vertices[3].uv = Vector2(0.0f, 0.0f);
+	vertices[0].uv = Vector2(0.0f, +1.0f);
+	vertices[1].uv = Vector2(+1.0f, 0.0f);
+	vertices[2].uv = Vector2(+1.0f, +1.0f);
+	vertices[3].uv = Vector2(0.0f, 0.0f);
 
 	// 마름모
-	vertices[0].uv = Vector2(+0.5f, +1.0f);
-	vertices[1].uv = Vector2(+0.5f, 0.0f);
-	vertices[2].uv = Vector2(+1.0f, +0.5f);
-	vertices[3].uv = Vector2(0.0f, +0.5f);
+	// vertices[0].uv = Vector2(+0.5f, +1.0f);
+	// vertices[1].uv = Vector2(+0.5f, 0.0f);
+	// vertices[2].uv = Vector2(+1.0f, +0.5f);
+	// vertices[3].uv = Vector2(0.0f, +0.5f);
 }

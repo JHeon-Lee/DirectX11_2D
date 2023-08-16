@@ -171,6 +171,7 @@
     <ClCompile Include="Systems\Mouse.cpp" />
     <ClCompile Include="Systems\Time.cpp" />
     <ClCompile Include="Systems\Window.cpp" />
+    <ClCompile Include="Utilities\BoundingBox.cpp" />
     <ClCompile Include="Utilities\DirectHelper.cpp" />
     <ClCompile Include="Utilities\Gui.cpp" />
     <ClCompile Include="Utilities\RenderTexture.cpp" />
@@ -197,6 +198,7 @@
     <ClInclude Include="Systems\Mouse.h" />
     <ClInclude Include="Systems\Time.h" />
     <ClInclude Include="Systems\Window.h" />
+    <ClInclude Include="Utilities\BoundingBox.h" />
     <ClInclude Include="Utilities\DirectHelper.h" />
     <ClInclude Include="Utilities\Gui.h" />
     <ClInclude Include="Utilities\RenderTexture.h" />
