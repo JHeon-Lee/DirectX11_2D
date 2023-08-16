@@ -76,6 +76,8 @@ bool BoundingBox::AABB(BoundingBox* a, BoundingBox* b)
 
 void BoundingBox::SetVertices()
 {
+	vertices.assign(4, VertexColor());
+
 	switch (pivot)
 	{
 	case LEFT:
