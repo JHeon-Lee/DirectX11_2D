@@ -11,6 +11,13 @@ public:
 
 	void GUI(); // 8/9~
 
+	void SetColor(Color color);
+
+	void Move();
+
+	BoundingBox* GetBox() { return box; }
+
+private:
 	void UpdateColor();
 
 private:

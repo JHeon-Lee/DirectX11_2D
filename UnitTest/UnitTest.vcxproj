@@ -150,6 +150,7 @@
     <ClInclude Include="Demos\02_TextureDemo.h" />
     <ClInclude Include="Demos\03_ShadedDemo.h" />
     <ClInclude Include="Demos\04_RTVDemo.h" />
+    <ClInclude Include="Demos\05_CollisionDemo.h" />
     <ClInclude Include="Demos\QuarteredDemo.h" />
     <ClInclude Include="Program.h" />
     <ClInclude Include="stdafx.h" />
@@ -159,6 +160,7 @@
     <ClCompile Include="Demos\02_TextureDemo.cpp" />
     <ClCompile Include="Demos\03_ShadedDemo.cpp" />
     <ClCompile Include="Demos\04_RTVDemo.cpp" />
+    <ClCompile Include="Demos\05_CollisionDemo.cpp" />
     <ClCompile Include="Demos\QuarteredDemo.cpp" />
     <ClCompile Include="Program.cpp" />
   </ItemGroup>

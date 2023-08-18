@@ -1,11 +1,24 @@
 #pragma once
 
+enum
+{
+	x = 0,
+	y
+};
+
 struct RectEdge
 {
 	Vector3 LT;
 	Vector3 LB;
 	Vector3 RT;
 	Vector3 RB;
+};
+
+struct AxisData
+{
+	Vector3 centerPos;
+	Vector3 axisDir[2];
+	float axisLen[2];
 };
 
 class BoundingBox
@@ -18,6 +31,7 @@ public:
 	void Render();
 
 	static bool AABB(BoundingBox* a, BoundingBox* b);
+	static bool OBB(BoundingBox* a, BoundingBox* b);
 
 private:
 	void SetVertices();
@@ -45,4 +59,5 @@ private:
 	Pivot pivot = CENTER;
 
 	RectEdge* edge = nullptr;
+	AxisData* data = nullptr;
 };

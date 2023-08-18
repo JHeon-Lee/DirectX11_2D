@@ -57,6 +57,8 @@ void Rect::Update()
 	
 	world = S * R * T;
 	wb->SetWorld(world);
+
+	box->Update(position, size, rotation);
 }
 
 void Rect::Render()
@@ -92,6 +94,27 @@ void Rect::GUI() // 포트폴리오 만들 때 실시간으로 값의 변경을 확인할 때에도 사용
 			UpdateColor();
 	}
 	End();
+}
+
+void Rect::SetColor(Color color)
+{
+	this->color = color;
+	UpdateColor();
+}
+
+void Rect::Move()
+{
+	auto key = Keyboard::Get();
+	float delta = Time::Delta();
+
+	if (key->Press('W'))
+		position.y += 100 * delta;
+	if (key->Press('S'))
+		position.y -= 100 * delta;
+	if (key->Press('A'))
+		position.x -= 100 * delta;
+	if (key->Press('D'))
+		position.x += 100 * delta;
 }
 
 void Rect::UpdateColor()
