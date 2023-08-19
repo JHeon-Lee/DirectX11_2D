@@ -23,6 +23,8 @@
     <ClCompile Include="Geometries\QuarteredTexture.cpp" />
     <ClCompile Include="Utilities\RenderTexture.cpp" />
     <ClCompile Include="Utilities\BoundingBox.cpp" />
+    <ClCompile Include="Geometries\JGChar.cpp" />
+    <ClCompile Include="Geometries\JGRect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -51,5 +53,7 @@
     <ClInclude Include="Geometries\QuarteredTexture.h" />
     <ClInclude Include="Utilities\RenderTexture.h" />
     <ClInclude Include="Utilities\BoundingBox.h" />
+    <ClInclude Include="Geometries\JGChar.h" />
+    <ClInclude Include="Geometries\JGRect.h" />
   </ItemGroup>
 </Project>

@@ -117,6 +117,21 @@ void Rect::Move()
 		position.x += 100 * delta;
 }
 
+//void Rect::CollisionMove()
+//{
+//	auto key = Keyboard::Get();
+//	float delta = Time::Delta();
+//
+//	if (key->Press('W'))
+//		position.y += 200 * delta;
+//	if (key->Press('S'))
+//		position.y -= 200 * delta;
+//	if (key->Press('A'))
+//		position.x -= 200 * delta;
+//	if (key->Press('D'))
+//		position.x += 200 * delta;
+//}
+
 void Rect::UpdateColor()
 {
 	// vertex의 정보 변경해야함 --> 버퍼 안의 내용은 맘대로 수정이 안됨

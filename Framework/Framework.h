@@ -15,6 +15,7 @@
 #include <string>
 #include <unordered_map>
 #include <assert.h>
+#include <random> // JumpGameDemo에 필요해서 추가
 
 using namespace std;
 

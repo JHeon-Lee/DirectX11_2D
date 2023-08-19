@@ -2,6 +2,7 @@
 #include "BoundingBox.h"
 
 BoundingBox::BoundingBox(Vector3 position, Vector3 size, float rotation, Color color, Pivot pivot)
+	: position(position), size(size), rotation(rotation), color(color), pivot(pivot)
 {
 	edge = new RectEdge;
 	data = new AxisData;
@@ -84,6 +85,58 @@ bool BoundingBox::AABB(BoundingBox* a, BoundingBox* b)
 		aEdge.LT.x <= bEdge.RB.x &&
 		aEdge.LT.y >= bEdge.RB.y &&
 		aEdge.RB.y <= bEdge.LT.y)
+		return true;
+
+	return false;
+}
+
+bool BoundingBox::TBC(BoundingBox* object, BoundingBox* background)
+{
+	if (!object || !background) return false;
+
+	RectEdge aEdge = *object->edge;
+	RectEdge bEdge = *background->edge;
+
+	if (aEdge.LT.y >= bEdge.LT.y)
+		return true;
+
+	return false;
+}
+
+bool BoundingBox::BBC(BoundingBox* object, BoundingBox* background)
+{
+	if (!object || !background) return false;
+
+	RectEdge aEdge = *object->edge;
+	RectEdge bEdge = *background->edge;
+
+	if (aEdge.RB.y <= bEdge.RB.y)
+		return true;
+
+	return false;
+}
+
+bool BoundingBox::LBC(BoundingBox* object, BoundingBox* background)
+{
+	if (!object || !background) return false;
+
+	RectEdge aEdge = *object->edge;
+	RectEdge bEdge = *background->edge;
+
+	if (aEdge.LT.x <= bEdge.LT.x)
+		return true;
+
+	return false;
+}
+
+bool BoundingBox::RBC(BoundingBox* object, BoundingBox* background)
+{
+	if (!object || !background) return false;
+
+	RectEdge aEdge = *object->edge;
+	RectEdge bEdge = *background->edge;
+
+	if (aEdge.RB.x >= bEdge.RB.x)
 		return true;
 
 	return false;

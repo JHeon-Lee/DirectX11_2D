@@ -155,6 +155,8 @@
   <ItemGroup>
     <ClCompile Include="Framework.cpp" />
     <ClCompile Include="Geometries\BlurTexture.cpp" />
+    <ClCompile Include="Geometries\JGChar.cpp" />
+    <ClCompile Include="Geometries\JGRect.cpp" />
     <ClCompile Include="Geometries\QuarteredTexture.cpp" />
     <ClCompile Include="Geometries\Rect.cpp" />
     <ClCompile Include="Geometries\ShadedTexture.cpp" />
@@ -179,6 +181,8 @@
   <ItemGroup>
     <ClInclude Include="Framework.h" />
     <ClInclude Include="Geometries\BlurTexture.h" />
+    <ClInclude Include="Geometries\JGChar.h" />
+    <ClInclude Include="Geometries\JGRect.h" />
     <ClInclude Include="Geometries\QuarteredTexture.h" />
     <ClInclude Include="Geometries\Rect.h" />
     <ClInclude Include="Geometries\ShadedTexture.h" />

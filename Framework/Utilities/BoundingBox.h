@@ -31,6 +31,10 @@ public:
 	void Render();
 
 	static bool AABB(BoundingBox* a, BoundingBox* b);
+	static bool TBC(BoundingBox* object, BoundingBox* background); // Top Boundary Collision
+	static bool BBC(BoundingBox* object, BoundingBox* background); // Bottom Boundary Collision
+	static bool LBC(BoundingBox* object, BoundingBox* background); // Left Boundary Collision
+	static bool RBC(BoundingBox* object, BoundingBox* background); // Right Boundary Collision
 	static bool OBB(BoundingBox* a, BoundingBox* b);
 
 private:

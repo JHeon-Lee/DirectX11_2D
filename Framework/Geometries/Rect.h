@@ -14,6 +14,7 @@ public:
 	void SetColor(Color color);
 
 	void Move();
+	//void CollisionMove();
 
 	BoundingBox* GetBox() { return box; }
 
@@ -39,7 +40,8 @@ private:
 	Vector3 size;
 	float rotation;
 
-	Color color = Color(1, 0, 0, 1);
+	// Color color = Color(1, 0, 0, 1);
+	Color color = Color(0, 0, 0, 1);
 
 	BoundingBox* box = nullptr;
 };

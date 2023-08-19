@@ -22,8 +22,8 @@ void CollisionDemo::Update()
 	r1->Update();
 	r2->Update();
 
-	//if (BoundingBox::AABB(r1->GetBox(), r2->GetBox()))
-	if (BoundingBox::OBB(r1->GetBox(), r2->GetBox()))
+	if (BoundingBox::AABB(r1->GetBox(), r2->GetBox()))
+	//if (BoundingBox::OBB(r1->GetBox(), r2->GetBox()))
 	{
 		r1->SetColor(Values::Green);
 		r2->SetColor(Values::Green);
