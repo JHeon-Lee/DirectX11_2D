@@ -3,7 +3,7 @@
 
 #include <iomanip> // 입출력 스트림의 조작자를 정의하는 헤더, 스트림의 출력 형식을 제어하는데 사용
 #include <sstream> // 문자열 스트림을 정의, 메모리 버퍼에 데이터를 읽고 쓰는데 사용
-#include <atlconv.h>
+#include <atlconv.h> // visual studio installer에서 atl 다운받기
 
 // 문자열을 지정된 구분자로 분할하는 기능
 void String::SplitString(vector<string>* result, string origin, string tok)
