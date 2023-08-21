@@ -19,6 +19,10 @@
 
 using namespace std;
 
+//DirectXTex - Animator 만드는 과정
+#include <DirectXTex/DirectXTex.h>
+#pragma comment(lib, "DirectXTex/DirecXTex.lib")
+
 //DirectX
 #include <d3dcompiler.h>
 #include <d3d11.h>
@@ -99,3 +103,5 @@ enum Pivot
 };
 
 #include "Utilities/BoundingBox.h"
+#include "Utilities/String.h"
+#include "Utilities/Path.h"
