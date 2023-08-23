@@ -19,7 +19,7 @@ AnimationRect::AnimationRect(Vector3 position, Vector3 size)
 	AnimationClip* Run_L = new AnimationClip
 	(
 		L"Run_L", srcTex, 10,
-		Vector2(0.0f, srcTex->GetHeight()), Vector2(srcTex->GetWidth(), srcTex->GetHeight()),
+		Vector2(0.0f, srcTex->GetHeight() * 0.5f), Vector2(srcTex->GetWidth(), srcTex->GetHeight()),
 		1.0f / 15.0f, true
 	); // 역재생이라 마지막에 true
 
