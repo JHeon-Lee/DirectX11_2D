@@ -29,6 +29,7 @@
     <ClCompile Include="Renders\Resources\Texture2D.cpp" />
     <ClCompile Include="Utilities\Path.cpp" />
     <ClCompile Include="Utilities\String.cpp" />
+    <ClCompile Include="Geometries\AnimationRect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Systems\Graphics.h" />
@@ -63,5 +64,6 @@
     <ClInclude Include="Renders\Resources\Texture2D.h" />
     <ClInclude Include="Utilities\Path.h" />
     <ClInclude Include="Utilities\String.h" />
+    <ClInclude Include="Geometries\AnimationRect.h" />
   </ItemGroup>
 </Project>

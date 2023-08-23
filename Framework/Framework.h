@@ -19,9 +19,9 @@
 
 using namespace std;
 
-//DirectXTex - Animator 만드는 과정
+//DirectXTex - Animator 만드는 과정에 필요
 #include <DirectXTex/DirectXTex.h>
-#pragma comment(lib, "DirectXTex/DirecXTex.lib")
+#pragma comment(lib, "DirectXTex/DirectXTex.lib")
 
 //DirectX
 #include <d3dcompiler.h>
@@ -85,6 +85,7 @@ extern HWND handle;
 #include "Renders/Resources/VertexType.h"
 #include "Renders/Resources/ShaderBuffer.h"
 #include "Renders/Resources/GlobalBuffer.h"
+#include "Renders/Resources/Texture2D.h"
 
 #include "Renders/IA/VertexBuffer.h"
 #include "Renders/IA/IndexBuffer.h"

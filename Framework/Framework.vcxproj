@@ -154,6 +154,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Framework.cpp" />
+    <ClCompile Include="Geometries\AnimationRect.cpp" />
     <ClCompile Include="Geometries\BlurTexture.cpp" />
     <ClCompile Include="Geometries\JGChar.cpp" />
     <ClCompile Include="Geometries\JGRect.cpp" />
@@ -184,6 +185,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Framework.h" />
+    <ClInclude Include="Geometries\AnimationRect.h" />
     <ClInclude Include="Geometries\BlurTexture.h" />
     <ClInclude Include="Geometries\JGChar.h" />
     <ClInclude Include="Geometries\JGRect.h" />
