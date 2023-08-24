@@ -87,7 +87,7 @@ ID3D11ShaderResourceView* Textures::Load(Texture2D* texture)
 	HRESULT hr;
 	TexMetadata metaData;
 
-	// Path cpp 颇老 积己饶 促矫 累己
+	// Path cpp 颇老 积己饶 累己
 	wstring ext = Path::GetExtension(texture->filePath);
 	if (ext == L"tga")
 	{
