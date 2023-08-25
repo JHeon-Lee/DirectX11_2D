@@ -170,6 +170,7 @@
     <ClCompile Include="Renders\Shaders\IShader.cpp" />
     <ClCompile Include="Renders\Shaders\PixelShader.cpp" />
     <ClCompile Include="Renders\Shaders\VertexShader.cpp" />
+    <ClCompile Include="Renders\States.cpp" />
     <ClCompile Include="Systems\Graphics.cpp" />
     <ClCompile Include="Systems\Keyboard.cpp" />
     <ClCompile Include="Systems\Mouse.cpp" />
@@ -204,6 +205,7 @@
     <ClInclude Include="Renders\Shaders\IShader.h" />
     <ClInclude Include="Renders\Shaders\PixelShader.h" />
     <ClInclude Include="Renders\Shaders\VertexShader.h" />
+    <ClInclude Include="Renders\States.h" />
     <ClInclude Include="Systems\Graphics.h" />
     <ClInclude Include="Systems\Keyboard.h" />
     <ClInclude Include="Systems\Mouse.h" />

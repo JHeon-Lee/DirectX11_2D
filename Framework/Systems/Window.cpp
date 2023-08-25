@@ -87,6 +87,7 @@ WPARAM Window::Run(IObject* mainObj)
 	Mouse::Create();
 	Time::Create();
 	Gui::Create();
+	States::Create();
 
 	this->mainObj->Init();
 

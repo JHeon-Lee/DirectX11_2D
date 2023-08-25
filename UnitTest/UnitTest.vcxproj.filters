@@ -10,6 +10,7 @@
     <ClInclude Include="Demos\04_RTVDemo.h" />
     <ClInclude Include="Demos\05_CollisionDemo.h" />
     <ClInclude Include="Demos\JumpGameDemo.h" />
+    <ClInclude Include="Demos\06_Animation.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.cpp" />
@@ -20,5 +21,6 @@
     <ClCompile Include="Demos\04_RTVDemo.cpp" />
     <ClCompile Include="Demos\05_CollisionDemo.cpp" />
     <ClCompile Include="Demos\JumpGameDemo.cpp" />
+    <ClCompile Include="Demos\06_Animation.cpp" />
   </ItemGroup>
 </Project>

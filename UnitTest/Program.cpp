@@ -10,6 +10,7 @@
 #include "Demos/04_RTVDemo.h"
 #include "Demos/05_CollisionDemo.h"
 #include "Demos/JumpGameDemo.h"
+#include "Demos/06_Animation.h"
 
 void Program::Init()
 {
@@ -45,7 +46,8 @@ void Program::Init()
 	//Push(new QuarteredDemo);
 	//Push(new RTVDemo);
 	//Push(new CollisionDemo);
-	Push(new JumpGameDemo);
+	//Push(new JumpGameDemo);
+	Push(new AnimationDemo);
 }
 
 void Program::Destroy()

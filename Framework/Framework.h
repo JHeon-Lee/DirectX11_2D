@@ -82,6 +82,8 @@ extern HWND handle;
 
 #include "Utilities/DirectHelper.h"
 
+#include "Renders/States.h"
+
 #include "Renders/Resources/VertexType.h"
 #include "Renders/Resources/ShaderBuffer.h"
 #include "Renders/Resources/GlobalBuffer.h"

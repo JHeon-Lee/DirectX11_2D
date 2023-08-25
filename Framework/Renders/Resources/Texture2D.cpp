@@ -5,6 +5,7 @@ using namespace DirectX;
 vector<TextureDesc> Textures::descs;
 
 Texture2D::Texture2D(wstring filePath)
+	: filePath(filePath)
 {
 	Textures::Load(this);
 }

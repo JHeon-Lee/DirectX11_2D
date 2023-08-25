@@ -2,6 +2,7 @@
 #include "Animator.h"
 
 AnimationClip::AnimationClip(wstring clipName, Texture2D* srcTex, UINT frameCount, Vector2 startPos, Vector2 endPos, float playRate, bool bReversed)
+	:clipname(clipName), frameCount(frameCount), playRate(playRate), bReversed(bReversed)
 {
 	srv = srcTex->GetSRV();
 

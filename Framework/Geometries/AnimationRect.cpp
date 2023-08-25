@@ -4,11 +4,12 @@
 AnimationRect::AnimationRect(Vector3 position, Vector3 size)
 	: TextureRect(position, size, 0.0f)
 {
-	SetShader(ShaderPath + L"Animation.hlsl");
+	//SetShader(ShaderPath + L"Animation.hlsl");
+	SetShader(ShaderPath + L"VertexTexture.hlsl");
 
 	animator = new Animator;
 	
-	// Animation 추가 방법
+	// Animation 추가 방법 --> 포트폴리오 만들땐 Demo에서 만드는게 좋음
 	Texture2D* srcTex = new Texture2D(TexturePath + L"player.png");
 	AnimationClip* Run_R = new AnimationClip
 	(
@@ -28,6 +29,26 @@ AnimationRect::AnimationRect(Vector3 position, Vector3 size)
 	animator->SetCurrentAnimClip(L"Run_R");
 
 	SAFE_DELETE(srcTex);
+
+	// Sampler
+	{
+		D3D11_SAMPLER_DESC desc;
+		States::GetSamplerDesc(&desc);
+		States::CreateSampler(&desc, &point[0]);
+
+		desc.Filter = D3D11_FILTER_MIN_MAG_MIP_POINT;
+		States::CreateSampler(&desc, &point[1]);
+	}
+
+	// Blend
+	{
+		D3D11_BLEND_DESC desc;
+		States::GetBlendDesc(&desc);
+		States::CreateBlend(&desc, &bPoint[0]);
+
+		desc.RenderTarget[0].BlendEnable = true;
+		States::CreateBlend(&desc, &bPoint[1]);
+	}
 }
 
 AnimationRect::~AnimationRect()
@@ -36,8 +57,61 @@ AnimationRect::~AnimationRect()
 
 void AnimationRect::Update()
 {
+	animator->Update();
+
+	MapVertexBuffer();
+	{
+		Vector2 frame = animator->GetCurrentFrame();
+		Vector2 texelSize = animator->GetTexelFrameSize();
+		vertices[0].uv.x = frame.x;
+		vertices[0].uv.y = frame.y + texelSize.y;
+
+		vertices[1].uv.x = frame.x + texelSize.x;
+		vertices[1].uv.y = frame.y;
+
+		vertices[2].uv.x = frame.x + texelSize.x;
+		vertices[2].uv.y = frame.y + texelSize.y;
+
+		vertices[3].uv.x = frame.x;
+		vertices[3].uv.y = frame.y;
+	}
+	UnmapVertexBuffer();
+
+	__super::Update();
 }
 
 void AnimationRect::Render()
 {
+	srv = animator->GetCurrentSRV();
+
+	DC->PSSetSamplers(0, 1, &point[1]);
+	DC->OMSetBlendState(bPoint[1], nullptr, (UINT)0xFFFFFFFF);
+
+	__super::Render();
+}
+
+void AnimationRect::Move()
+{
+	auto* keyboard = Keyboard::Get();
+	float delta = Time::Delta();
+
+	if (keyboard->Press('W'))
+	{
+		position.y += 100 * delta;
+	}
+
+	if (keyboard->Press('S'))
+	{
+		position.y -= 100 * delta;
+	}
+	if (keyboard->Press('A'))
+	{
+		position.x -= 100 * delta;
+		animator->SetCurrentAnimClip(L"Run_L");
+	}
+	if (keyboard->Press('D'))
+	{
+		position.x += 100 * delta;
+		animator->SetCurrentAnimClip(L"Run_R");
+	}
 }

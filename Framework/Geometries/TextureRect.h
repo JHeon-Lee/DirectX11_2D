@@ -15,6 +15,11 @@ public:
 	void SetShader(wstring shaderPath);
 	void SetSRV(ID3D11ShaderResourceView* srv) { this->srv = srv; }
 
+	void MapVertexBuffer();
+	void UnmapVertexBuffer();
+
+	virtual void Move();
+
 private:
 	void SetVertices();
 	void UpdateWorld();
@@ -42,4 +47,6 @@ protected: // 나중에 animationrect 만들때 상속시키기 위해 protected를 사용
 	Pivot pivot = CENTER;
 
 	ID3D11ShaderResourceView* srv = nullptr;
+
+	D3D11_MAPPED_SUBRESOURCE subResource;
 };

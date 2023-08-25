@@ -73,6 +73,7 @@ TextureRect::~TextureRect()
 void TextureRect::Update()
 {
 	UpdateWorld();
+	Move();
 }
 
 void TextureRect::UpdateWorld()
@@ -116,6 +117,21 @@ void TextureRect::SetShader(wstring shaderPath)
 	ps->Clear();
 	vs->Create(ShaderPath + shaderPath, "VS");
 	ps->Create(ShaderPath + shaderPath, "PS");
+}
+
+void TextureRect::MapVertexBuffer()
+{
+	DC->Map(vb->GetResource(), 0, D3D11_MAP_WRITE_DISCARD, 0, &subResource);
+}
+
+void TextureRect::UnmapVertexBuffer()
+{
+	memcpy(subResource.pData, vertices.data(), sizeof(vertices[0]) * vertices.size());
+	DC->Unmap(vb->GetResource(), 0);
+}
+
+void TextureRect::Move()
+{
 }
 
 void TextureRect::SetVertices()

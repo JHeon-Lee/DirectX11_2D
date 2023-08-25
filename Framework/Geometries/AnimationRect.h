@@ -14,6 +14,8 @@ public:
 
 	void SetAnimation(Animator* animator) { this->animator = animator; }
 
+	virtual void Move() override;
+
 private:
 	class Animator* animator = nullptr;
 
