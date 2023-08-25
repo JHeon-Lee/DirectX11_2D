@@ -31,6 +31,8 @@ public:
 	float GetWidth() { return (float)metaData.width; }
 	float GetHeight() { return (float)metaData.height; }
 
+	wstring GetFilePath() { return filePath; }
+	
 private:
 	friend class Textures;
 

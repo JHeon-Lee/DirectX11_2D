@@ -83,11 +83,11 @@ void States::CreateDepthStencilDesc()
 	dsDesc.DepthWriteMask = D3D11_DEPTH_WRITE_MASK_ALL; // 깊이 버퍼의 모든 비트에 대해 쓰기 작업 허용
 	dsDesc.DepthFunc = D3D11_COMPARISON_LESS; // 깊이 테스트 함수 LESS로 설정
 	dsDesc.StencilEnable = true; // 스텐실 테스트 사용 설정
-	dsDesc.StencilReadMask = 0xFF; // 스텐실 버퍼에서 읽을 수 이쓴 비트 마스크 설정
-	dsDesc.StencilWriteMask = 0xFF; // 스텐실 테스트 사용 설정
+	dsDesc.StencilReadMask = 0xFF; // 스텐실 버퍼에서 읽을 수 있는 비트 마스크 설정
+	dsDesc.StencilWriteMask = 0xff; // 스텐실 테스트 사용 설정
 
 	dsDesc.FrontFace.StencilFailOp = D3D11_STENCIL_OP_KEEP; // 전면 면의 스텐실 실패 작업 설정
-	dsDesc.FrontFace.StencilDepthFailOp = D3D11_STENCIL_OP_INCR; // 전면 면의 스텐실 싶이 실패 작업 설정
+	dsDesc.FrontFace.StencilDepthFailOp = D3D11_STENCIL_OP_INCR; // 전면 면의 스텐실 깊이 실패 작업 설정
 	dsDesc.FrontFace.StencilPassOp = D3D11_STENCIL_OP_KEEP; // 전면 면의 스텐실 패스 작업 설정
 	dsDesc.FrontFace.StencilFunc = D3D11_COMPARISON_ALWAYS; // 전면 면의 스텐실 함수 설정
 

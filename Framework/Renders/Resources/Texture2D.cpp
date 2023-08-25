@@ -62,7 +62,7 @@ void Texture2D::ReadPixel(ID3D11Texture2D* texture, vector<Color>* pixels)
 		alpha[i] = (colors[i] & 0xFF000000);
 		red[i] = (colors[i] & 0x00FF0000);
 		green[i] = (colors[i] & 0x0000FF00);
-		blue[i] = (colors[i] & 0x000000FF);
+		blue[i] = (colors[i] & 0xFF0000FF);
 
 		red[i] = colors[i] >> 16;
 		blue[i] = colors[i] << 16; // texture는 rgb순서가 반대로 저장되서 바꿔줌
