@@ -5,7 +5,6 @@ AnimationRect::AnimationRect(Vector3 position, Vector3 size)
 	: TextureRect(position, size, 0.0f)
 {
 	//SetShader(ShaderPath + L"Animation.hlsl");
-	SetShader(ShaderPath + L"VertexTexture.hlsl");
 
 	animator = new Animator;
 	

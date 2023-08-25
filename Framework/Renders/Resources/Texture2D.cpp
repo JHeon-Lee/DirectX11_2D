@@ -164,6 +164,4 @@ ID3D11ShaderResourceView* Textures::Load(Texture2D* texture)
 
 		return srv;
 	}
-
-	return nullptr;
 }

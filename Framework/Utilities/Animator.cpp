@@ -2,7 +2,7 @@
 #include "Animator.h"
 
 AnimationClip::AnimationClip(wstring clipName, Texture2D* srcTex, UINT frameCount, Vector2 startPos, Vector2 endPos, float playRate, bool bReversed)
-	:clipname(clipName), frameCount(frameCount), playRate(playRate), bReversed(bReversed)
+	:clipName(clipName), frameCount(frameCount), playRate(playRate), bReversed(bReversed)
 {
 	srv = srcTex->GetSRV();
 
@@ -13,14 +13,14 @@ AnimationClip::AnimationClip(wstring clipName, Texture2D* srcTex, UINT frameCoun
 
 	Vector2 frameSize; // 그림 하나의 사이즈 --> 이렇게 설정하면 축을 잘 맞춰줘야함
 	frameSize.x = clipSize.x / frameCount;
-	frameSize.y = clipSize.y / frameCount;
+	frameSize.y = clipSize.y;
 
 	texelFrameSize.x = frameSize.x / imageWidth;
-	texelFrameSize.y = frameSize.y / imageWidth;
+	texelFrameSize.y = frameSize.y / imageHeight;
 
 	Vector2 texelStartPos; // texel : 텍스처 안의 픽셀
 	texelStartPos.x = startPos.x / imageWidth;
-	texelStartPos.y = startPos.y / imageWidth;
+	texelStartPos.y = startPos.y / imageHeight;
 
 	Vector2 keyframe;
 
@@ -62,6 +62,7 @@ void Animator::Update()
 
 			if (currentFrameIndex == -1)
 				currentFrameIndex = currentClip->frameCount - 1;
+
 			currentFrame = currentClip->keyFrames[currentFrameIndex];
 		}
 		deltaTime = 0.0f;
@@ -72,14 +73,14 @@ void Animator::Update()
 
 void Animator::AddAnimClip(AnimationClip* animClip)
 {
-	animClips.insert(make_pair(animClip->clipname, animClip));
+	animClips.insert(make_pair(animClip->clipName, animClip));
 }
 
 void Animator::SetCurrentAnimClip(wstring clipName)
 {
 	if (currentClip == nullptr && CheckExist(clipName) == true) // 클립은 없고 애니메이션만 있음
 		currentClip = animClips.find(clipName)->second;
-	else if (currentClip != nullptr && currentClip->clipname == clipName) // 클립이 있고, 업데이트된 clipname이 같다면
+	else if (currentClip != nullptr && currentClip->clipName == clipName) // 클립이 있고, 업데이트된 clipname이 같다면
 		return; // 이 구문 없으면 첫 프레임에서 안움직임
 
 	if (CheckExist(clipName))

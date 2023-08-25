@@ -11,7 +11,7 @@ public:
 				  bool bReversed = false);
 
 protected:
-	wstring clipname = L"";
+	wstring clipName = L"";
 	vector<Vector2> keyFrames; // 장면당 uv 좌표, 3D에서는 다른 의미로 쓰임(움직임 관련)
 	uint frameCount = 0;
 	ID3D11ShaderResourceView* srv = nullptr;
